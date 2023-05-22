@@ -25,7 +25,10 @@ La mala calidad del software siempre la acaba pagando o asumiendo alguien.
 CLEAN CODE -> Es aquel que se ha escrito con la intención de que otra persona, o nosotros mísmos , lo entendamos en un futuro
 Nuestro código tiene que ser simple y directo, programar es el arte de decirle a otro humano lo que quieres que el PC haga.
 
+- Nombres pronunciables y expresivos
+No debemos ahorrar letras para definir el nombre de nuestras variables o funciones
 
+- Ausencia de información tecnica en los nombres -> No hace falta ser tan expresivos
 
 
 
