@@ -20,16 +20,38 @@ Cómo pagamos una deuda técnica? -> REFACTORIZACIÓN, que es un proceso que tie
 
 Usualmente para que una refactorizacion fuerte tenga el objetivo esperado, es imprescindible contar con PRUEBAS AUTOMÁTICAS.
 
-La mala calidad del software siempre la acaba pagando o asumiendo alguien. 
+La mala calidad del software siempre la acaba pagando o asumiendo alguien.
 
 CLEAN CODE -> Es aquel que se ha escrito con la intención de que otra persona, o nosotros mísmos , lo entendamos en un futuro
 Nuestro código tiene que ser simple y directo, programar es el arte de decirle a otro humano lo que quieres que el PC haga.
 
 - Nombres pronunciables y expresivos
-No debemos ahorrar letras para definir el nombre de nuestras variables o funciones
+  No debemos ahorrar letras para definir el nombre de nuestras variables o funciones
 
 - Ausencia de información tecnica en los nombres -> No hace falta ser tan expresivos
 
+- Nombres según el tipo de dato
 
-
+```
+Listas
+Malo -> const fruit = ['manzana', 'pera', 'fresa']
+Regular -> const fruitList = ['manzana', 'pera', 'fresa']
+Bueno -> const fruits = ['manzana', 'pera', 'fresa']
+Mejor -> const fruitNames = ['manzana', 'pera', 'fresa']
+```
+```
+Booleanos
+Malo -> const open = true // write = true // fruit = true // active = true...
+Mejor -> const isOpen = true // canWrite = true // hasFruit = true // isActive = true...
+```
+```
+Números
+Malo -> const fruits = 3 // const cars = 10
+Mejor -> const maxFruits = 5 // const totalOfCars = 10
+```
+```
+Funciones -> Debe de representar acciones - No debemos ser ultra explicitos
+Malo -> createUserIfNoteExists() // updateUserIfNotEmpty() // sendEmailIfFieldIsValid()
+Mejor -> creteUser() // updateUser() // sendEmail()
+```
 
