@@ -57,9 +57,10 @@ Funciones -> Debe de representar acciones - No debemos ser ultra explicitos
 Malo -> createUserIfNoteExists() // updateUserIfNotEmpty() // sendEmailIfFieldIsValid()
 Mejor -> creteUser() // updateUser() // sendEmail()
 ```
+
 No debería hacer falta poner un comentario para que se entienda lo que hace la funcion u obtiene una variable
 
-- CLASES 
+- CLASES
 
 No deben ser nombres genéricos ni explicitos. El nombre de la clase es lo más importante de la clase.
 
@@ -74,6 +75,10 @@ Podemos hacernos 3 preguntas para saber si el nombre es correcto:
 
 Sabemos que estamos desarrollando código limpio cuando cada función hace exactamente lo que su nombre indica
 
-Deberíamos limitar a 3 parámetros posicionales 
+Deberíamos limitar a 3 parámetros posicionales
+Cuanto más simple sea la funcion, mejor!
+Deben tener un tamaño reducido, si son muy largas es posible que haga más cosas de las que debería, deberían tener menos de 20 líneas de código
 
-
+Funciones de una sola línea sin causar complejidad
+Debemos evitar el uso del "else"
+Se debe priorizar el uso de la condicional ternaria
