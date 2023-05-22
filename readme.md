@@ -39,19 +39,41 @@ Regular -> const fruitList = ['manzana', 'pera', 'fresa']
 Bueno -> const fruits = ['manzana', 'pera', 'fresa']
 Mejor -> const fruitNames = ['manzana', 'pera', 'fresa']
 ```
+
 ```
 Booleanos
 Malo -> const open = true // write = true // fruit = true // active = true...
 Mejor -> const isOpen = true // canWrite = true // hasFruit = true // isActive = true...
 ```
+
 ```
 Números
 Malo -> const fruits = 3 // const cars = 10
 Mejor -> const maxFruits = 5 // const totalOfCars = 10
 ```
+
 ```
 Funciones -> Debe de representar acciones - No debemos ser ultra explicitos
 Malo -> createUserIfNoteExists() // updateUserIfNotEmpty() // sendEmailIfFieldIsValid()
 Mejor -> creteUser() // updateUser() // sendEmail()
 ```
+No debería hacer falta poner un comentario para que se entienda lo que hace la funcion u obtiene una variable
+
+- CLASES 
+
+No deben ser nombres genéricos ni explicitos. El nombre de la clase es lo más importante de la clase.
+
+Los nombres deben estar formados por un sustantivo o frases de sustantivo, y debemos usar el UpperCamelCase.
+
+Podemos hacernos 3 preguntas para saber si el nombre es correcto:
+1- Qué hace exactamente la clase?
+2- Cómo exactamente esta clase realiza cierta tarea?
+3- Hay algo específico sobre su ubicación?
+
+- FUNCIONES
+
+Sabemos que estamos desarrollando código limpio cuando cada función hace exactamente lo que su nombre indica
+
+Deberíamos limitar a 3 parámetros posicionales 
+
 

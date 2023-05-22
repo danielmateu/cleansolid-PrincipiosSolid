@@ -21,21 +21,21 @@
     // const run = true;
     // const noTieneItems = true;
     // const loading = false;
-    const isJumping = false;
-    const isRunning = true;
-    const hasNoItems = true;
+    const canJump = false;
+    const canRun = true;
+    const hasItems = true;
     const isLoading = false;
 
     // Otros ejercicios
     // tiempo inicial
     // const start = new Date().getTime();
-    const initialTime = new Date().getTime();
+    const startTime = new Date().getTime();
     //....
     // 3 doritos después
     //...
     // Tiempo al final
     // const end = new Date().getTime() - start;
-    const finalTime = new Date().getTime() - initialTime;
+    const endTime = new Date().getTime() - startTime;
 
 
     // Funciones
