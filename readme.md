@@ -82,3 +82,10 @@ Deben tener un tamaño reducido, si son muy largas es posible que haga más cosa
 Funciones de una sola línea sin causar complejidad
 Debemos evitar el uso del "else"
 Se debe priorizar el uso de la condicional ternaria
+
+- PRINCIPIO DRY - Don't repeat yourself
+  Nos ayuda a evitar tener duplicidad de código, a simplificar las pruebas, a centralizar procesos...
+  Aplicar el principio DRY usualmente lleva a refactorizar
+
+
+
