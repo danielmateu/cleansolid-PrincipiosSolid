@@ -87,5 +87,11 @@ Se debe priorizar el uso de la condicional ternaria
   Nos ayuda a evitar tener duplicidad de código, a simplificar las pruebas, a centralizar procesos...
   Aplicar el principio DRY usualmente lleva a refactorizar
 
+- Los comentarios deben explicar más que lo que hace el código, por qué se ha tomado la decisión de generarlo de esa manera en vez de otra
+
+- Programación Orientada a Objetos
+No debemos nombrar las clases de forma generica, las clases deben ser bien especificas
+
+- Principio de responsabilidad única -> Cada una de las clases debe hacer una tarea y hacerla bien
 
 
