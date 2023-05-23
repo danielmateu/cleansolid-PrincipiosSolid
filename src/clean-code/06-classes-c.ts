@@ -7,11 +7,10 @@
     type Gender = 'M' | 'F';
 
     interface PersonProps {
-        name: string;
-        gender: Gender;
         birthDate: Date;
+        gender: Gender;
+        name: string;
     }
-
     class Person {
 
         public birthDate: Date;
@@ -24,33 +23,47 @@
             this.name = name;
         }
     }
-
     interface UserProps {
         email: string;
         role: string;
-        name: string;
-        gender: Gender;
-        birthDate: Date;
     }
-
-    class User extends Person {
-
-        public lastAccess: Date;
+    class User {
         public email: string;
+        public lastAccess: Date;
         public role: string;
 
-        constructor({ birthDate, email, gender, name, role }: UserProps) {
-            super({ name, gender, birthDate });
-            this.lastAccess = new Date();
+        constructor({ email, role }: UserProps) {
             this.email = email;
+            this.lastAccess = new Date();
             this.role = role;
-
         }
 
         checkCredentials() {
             return true
         }
+    }
 
+    interface SettingProps {
+        workingDirectory: string;
+        lastOpenFolder: string;
+    }
+    class Settings {
+        lastOpenFolder: string;
+        workingDirectory: string;
+
+        constructor({ workingDirectory, lastOpenFolder }: SettingProps) {
+            this.workingDirectory = workingDirectory;
+            this.lastOpenFolder = lastOpenFolder;
+        }
+    }
+    interface UserSettingProps {
+        workingDirectory: string;
+        lastOpenFolder: string;
+        email: string;
+        role: string;
+        name: string;
+        gender: Gender;
+        birthDate: Date;
     }
 
     interface UserSettingProps {
@@ -64,14 +77,16 @@
 
     }
 
-    class UserSettings extends User {
-        lastOpenFolder: string;
-        workingDirectory: string;
+    class UserSettings {
 
-        constructor({ workingDirectory, lastOpenFolder, email, role, name, gender, birthDate }: UserSettingProps) {
-            super({ email, role, name, gender, birthDate })
-            this.workingDirectory = workingDirectory;
-            this.lastOpenFolder = lastOpenFolder;
+        public person: Person;
+        public user: User;
+        public settings: Settings;
+
+        constructor({ name, birthDate, gender, email, role, workingDirectory, lastOpenFolder }: UserSettingProps) {
+            this.person = new Person({ name, gender, birthDate });
+            this.user = new User({ email, role });
+            this.settings = new Settings({ workingDirectory, lastOpenFolder });
         }
     }
 
@@ -85,6 +100,7 @@
         birthDate: new Date()
     });
 
-    console.log(userSettings);
+    console.log({ userSettings });
 
+    userSettings.user.checkCredentials();
 })();
