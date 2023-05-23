@@ -90,15 +90,15 @@ Se debe priorizar el uso de la condicional ternaria
 - Los comentarios deben explicar más que lo que hace el código, por qué se ha tomado la decisión de generarlo de esa manera en vez de otra
 
 - Programación Orientada a Objetos
-No debemos nombrar las clases de forma generica, las clases deben ser bien especificas
+  No debemos nombrar las clases de forma generica, las clases deben ser bien especificas
 
 - Principio de responsabilidad única -> Cada una de las clases debe hacer una tarea y hacerla bien
 
 - Se deben crear las classes siempre de la misma manera
 - LISTA RECOMENDADA -
-Comenzar con lista de propiedades
-1- Propiedades estáticas
-2- Propiedades Públicas
+  Comenzar con lista de propiedades
+  1- Propiedades estáticas
+  2- Propiedades Públicas
 
 Métodos
 1- Empezar por los constructores estáticos
@@ -109,15 +109,27 @@ Métodos
 6- Getters y Setters al final
 
 - COMENTARIOS
-Es horrible leer código de otros, debemos de preocuparnos de que nuestro cógdigo sea fácil de leer a parte de su funcionamiento, los comentarios no se deben explicar a si mísmos
+  Es horrible leer código de otros, debemos de preocuparnos de que nuestro cógdigo sea fácil de leer a parte de su funcionamiento, los comentarios no se deben explicar a si mísmos
 
 Debemos evitar usar comentarios, pero cuando usamos librerías de terceros, APIS, frameworks, etc. nos entrontraremos ante situaciones en las que escribir un comentario será mejor que dejar una solucion compleja o un hack sin explicación
 
 Los comentarios deben ser la excepción, no la regla, el código debe ser auto-explicativo. Debemos explicar el porqué, en ligar del qué o el cómo?
 
+- UNIFORMIDAD EN EL PROYECTO -
+  Problemas similares, soluciones similares, tanto en el código como en la estructura del proyecto
 
+- CODESMELLS -
+  STUPID, 6 codesmells que debemos de evitar.
 
+Silngleton: Patròn Singleton
+Tight Coupling : Alto acoplamiento
+Untestability: Código no problable(unit test)
+Premature optimization: Optimizaciones prematuras
+Indescriptive Naming: Nombres poco descriptivos
+Duplication: Duplicidad de código, no aplicar DRY
 
+Patrón Singleton
 
-
-
+Pros -> Garantiza una única instancia de la clase a lo largo de toda la aplicación
+Contras ->
+Vive en un contexto global. Puede ser modificado por cualquiera y en cualquier momento. No es rastreable. Difícil de testear debido a su ubicación
