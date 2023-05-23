@@ -94,4 +94,20 @@ No debemos nombrar las clases de forma generica, las clases deben ser bien espec
 
 - Principio de responsabilidad única -> Cada una de las clases debe hacer una tarea y hacerla bien
 
+- Se deben crear las classes siempre de la misma manera
+
+- LISTA RECOMENDADA -
+Comenzar con lista de propiedades
+1- Propiedades estáticas
+2- Propiedades Públicas
+
+Métodos
+1- Empezar por los constructores estáticos
+2- Seguimos con el constructor
+3- Métodos estáticos
+4- Métodos privados
+5- Resto de métodos de instancia ordenados de mayor a menor importancia
+6- Getters y Setters al final
+
+
 
