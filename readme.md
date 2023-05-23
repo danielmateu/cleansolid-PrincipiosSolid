@@ -95,7 +95,6 @@ No debemos nombrar las clases de forma generica, las clases deben ser bien espec
 - Principio de responsabilidad única -> Cada una de las clases debe hacer una tarea y hacerla bien
 
 - Se deben crear las classes siempre de la misma manera
-
 - LISTA RECOMENDADA -
 Comenzar con lista de propiedades
 1- Propiedades estáticas
@@ -108,6 +107,17 @@ Métodos
 4- Métodos privados
 5- Resto de métodos de instancia ordenados de mayor a menor importancia
 6- Getters y Setters al final
+
+- COMENTARIOS
+Es horrible leer código de otros, debemos de preocuparnos de que nuestro cógdigo sea fácil de leer a parte de su funcionamiento, los comentarios no se deben explicar a si mísmos
+
+Debemos evitar usar comentarios, pero cuando usamos librerías de terceros, APIS, frameworks, etc. nos entrontraremos ante situaciones en las que escribir un comentario será mejor que dejar una solucion compleja o un hack sin explicación
+
+Los comentarios deben ser la excepción, no la regla, el código debe ser auto-explicativo. Debemos explicar el porqué, en ligar del qué o el cómo?
+
+
+
+
 
 
 
