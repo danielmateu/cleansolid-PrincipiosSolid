@@ -128,8 +128,17 @@ Premature optimization: Optimizaciones prematuras
 Indescriptive Naming: Nombres poco descriptivos
 Duplication: Duplicidad de código, no aplicar DRY
 
-Patrón Singleton
-
+- Patrón Singleton -
 Pros -> Garantiza una única instancia de la clase a lo largo de toda la aplicación
 Contras ->
 Vive en un contexto global. Puede ser modificado por cualquiera y en cualquier momento. No es rastreable. Difícil de testear debido a su ubicación
+
+- Alto acoplamiento -
+Lo ideal es tener bajo acoplamiento y buena cohesión
+Un cambio de módulo provoca un efecto domino de los cambios en otros módulos
+
+El ensamblaje de mçódulos puede requerir más esfuerzo y/o tiempo debido a la mayor dependencia entre módulos
+
+Un módulo en particular puede ser más difícil de reutilizar y/o probar porque se deben incluir módulos dependientes
+
+Posibles soluciones -> Queremos diseñar componentes (piezas de código) que sean autocontenidos, auto suficientes e independientes. Con un objetivo y un proposito bien definido
